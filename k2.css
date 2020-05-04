@@ -1,0 +1,102 @@
+body{
+        background-color:blue;
+}
+
+#myCarousel{
+    margin-top: 50px;
+   
+}
+
+.adjs{
+    height: 200px;
+   font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #e3e3e3;
+    
+}
+
+
+
+
+.this{
+height: 500px;
+}
+
+.card{
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.card-title{
+ font-family: 'Bangers', cursive;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.card-text{
+    color:antiquewhite;
+}
+
+.scroll{
+    height:150px;
+}
+.text{
+   font-family: 'Acme', sans-serif;
+}
+.event{
+    background-image: url('images/proniteimage.jpg');
+    height: 500px;
+
+    background-attachment: fixed;
+
+}
+
+.pro{
+    font-family: 'Teko', sans-serif;
+    font-size: 60px;
+    padding-top: 30px;
+    color: azure;
+    padding-left: 40px;
+}
+
+
+.event-con{
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    color: cornsilk;
+    padding-left: 40px;
+    
+}
+
+.b{
+    margin-top: 50px;
+    margin-left: 600px;
+    
+}
+
+
+.foot{
+    height: 80px;
+    background-color: #222222;
+    color: aliceblue;
+}
+
+
+.event-head{
+    height: 80px;
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    color: black;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #e3e3e3;   
+    
+}

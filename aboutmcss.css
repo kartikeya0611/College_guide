@@ -1,0 +1,38 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+html,body{
+     background: url("images/pattern-2054297_1920.jpg");
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+
+.col-sm-4{
+    border: 3px;
+    border-bottom-color: black;
+}
+
+.space{
+    text-align: right;
+}
+
+.space2{
+    text-align: justify;
+}
+
+.table
+{
+    margin-left:120px;
+}
+
+
+
+.foot{
+    height: 80px;
+    background-color: #222222;
+    color: aliceblue;
+}

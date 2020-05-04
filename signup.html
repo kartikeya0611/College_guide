@@ -1,0 +1,231 @@
+<html>
+	<head>
+		<title>Scrapbook</title>
+		<link rel="stylesheet" href="k3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="images/parallax.js-1.5.0/parallax.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+
+		<script type = "text/javascript">
+			//Form validation code will come here.
+			function validate()
+			{
+				if(document.myForm.Name.value == "")
+				{
+					alert("Please provide your name!");
+					document.myForm.Name.focus();
+					return false;
+				}
+
+				if(document.myForm.EMail.value == "")
+				{
+					alert("Please provide your Email!");
+					document.myForm.EMail.focus();
+					return false;
+				}
+
+				var emailID = document.myForm.EMail.value;
+				atpos = emailID.indexOf("@");
+				dotpos = emailID.indexOf(".");
+
+				if(atpos < 1 || (dotpos - atpos < 2))
+				{
+					alert("Please enter correct email ID");
+					document.myForm.EMail.focus();
+					return false;
+				}
+                
+                 if(document.myForm.team.value == "")
+				{
+					alert("Please select a Team!!");
+					return false;
+				}
+
+				if(document.myForm.gender.value == "")
+				{
+					alert("Please select Gender!!");
+					return false;
+				}
+                
+               
+
+				if(document.myForm.address.value == "")
+				{
+					alert("Please enter the Permanent Address!");
+					document.myForm.address.focus();
+					return false;
+				}
+
+				if(document.myForm.address1.value == "")
+				{
+					alert("Please enter the Address for correspondence!");
+					document.myForm.address1.focus();
+					return false;
+				}
+
+				
+
+				if(document.myForm.mob.value == "" || isNaN(document.myForm.mob.value) || document.myForm.mob.value.length != 10)
+				{
+					alert("Please provide a 10 digit mobile number.");
+					document.myForm.mob.focus();
+					return false;
+				}
+				if(document.myForm.Zip.value == "" || isNaN(document.myForm.Zip.value) || document.myForm.Zip.value.length != 6)
+				{
+					alert("Please provide a 06 digit ZIP Code.");
+					document.myForm.Zip.focus();
+					return false;
+				}
+				
+				if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.myForm.EMail.value))
+				{
+					return (true);
+				}
+
+				else
+				{
+					alert("You have entered an invalid email address!");
+					return (false);
+				}
+				return (true);
+			}
+		</script>
+
+		<style>
+			form, th, tr
+			{
+				border:5px;
+			}
+		</style>
+	</head>
+	<body>
+		
+<nav class="navbar navbar-inverse
+    navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">My Scrapbook</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="k2.html">Home</a></li>
+      <li><a href="team.html">Teams</a></li>
+      <li><a href="aboutm.html">About MIT</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right active">
+      <li><a href="http://localhost/clg/signup.html"> Team Registration <span class="glyphicon glyphicon-user"></span></a></li>
+      
+    </ul>
+  </div>
+</nav>
+   
+    <br>
+    <br>
+    <br>
+
+		
+		
+		
+			<h1> <center> Student Registration Form </center> </h1>
+			<form method="post" name = "myForm" action="form1.php" onsubmit = "return(validate())">
+			<table class="table" cellspacing = "2" cellpadding = "2">
+				<tr>
+					<td class="space" >Name</td>
+					<td class="space2"><input type = "text" name = "Name"  size = "50"/></td>
+				</tr>
+				
+				<tr>
+					<td class="space">EMail</td>
+					<td class="space2"><input type = "text" name = "EMail"  size = "50" /></td>
+				</tr>
+               
+                <tr>
+					<td class="space">Select Team</td>
+					<td class="space2">
+                        <input type = "radio" name = "team" value = "acc">Team Acceleracers <br>
+					<input type = "radio" name = "team" value="robo">Robocon Team <br>
+					<input type = "radio" name = "team" value="aarohan">Aarohan Team<br>
+					<input type = "radio" name = "team" value="tex">Texephyr Team<br>
+					<input type = "radio" name = "team" value="skytroopers">Sky Troopers Team<br>
+					<input type = "radio" name = "team" value="summit">Summit Team<br>
+				</tr>
+				
+				<tr>
+					<td class="space">Gender</td>
+					<td class="space2"><input type = "radio" name = "gender" value = "m">Male <br>
+					<input type = "radio" name = "gender" value="f">Female</td>
+				</tr>
+
+				<tr>
+					<td class="space">Permanent Address</td>
+					<td class="space2"><input type = "text" name = "address" height = "100" size = "50"/></td>
+				</tr>
+
+				<tr>
+					<td class="space">Correspondence Address</td>
+					<td class="space2"><input type = "text" name = "address1" height = "100" size = "50"/></td>
+				</tr>
+
+
+				<tr>
+					<td class="space" >Mobile Number</td>
+					<td class="space2"><input type = "text" name = "mob" maxlength = "10" /></td>
+				</tr>
+
+				<tr>
+					<td class="space" >Zip Code</td>
+					<td class="space2"><input type = "text" name = "Zip" maxlength = "6"  size = "6" /></td>
+				</tr>
+                
+                
+				
+
+				<tr class="space3">
+					<td colspan = "2" padding = "-5px"><center><input type = "submit" value = "Submit"> </center> </td>
+				</tr>
+			</table>
+			</form>
+			
+
+ <footer class="foot">
+        
+        <div class="row">
+  <div class="col-sm-4"> <br>Copyright © Made by students of MIT-WPU(CSE) Batch-C3</div>
+  <br>
+  <div class="col-sm-4"> <i href="https://facebook.com" class="fa fa-facebook"></i><a href="https://facebook.com"> Facebook</a>
+  
+  <br>
+  
+  <i class="fa fa-twitter-square"></i><a href="https://twitter.com">Twitter</a>
+  
+  </div>
+  <div class="col-sm-4">About us - 
+       <br>
+       
+       MIT-WPU , Kothrud , Pune
+       <br>
+       Contact - +91 8412997371
+       
+       </div>
+
+    </div>
+        
+</footer>			
+			
+
+		</body>
+</html>
